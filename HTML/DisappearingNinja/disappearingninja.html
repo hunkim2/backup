@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Disappearing Ninja!</title>
+	<style>
+		.img{
+			margin:5px 5px;
+			height:150px;
+			width:150px;
+			display:inline-block;
+			vertical-align: top;
+		}
+		.div{
+			height:400px;
+			width:700px;
+		}
+	</style>
+	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('img').addClass('img')
+
+			$('div').addClass('div')
+
+			$('img').click(function(){
+				$(this).fadeOut('fast');
+			})
+
+			$('#restore').click(function(){
+				$('img').show();
+			})
+		});
+	</script>
+</head>
+<body>
+	<h1>jQuery Disappearing Ninja Assignment</h1>
+	<div id = "ninjabox">
+		<img src="ninja.png" alt="ninja">
+		<img src="ninja.png" alt="ninja">
+		<img src="ninja.png" alt="ninja">
+		<img src="ninja.png" alt="ninja">
+		<img src="ninja.png" alt="ninja">
+		<img src="ninja.png" alt="ninja">
+		<img src="ninja.png" alt="ninja">
+		<img src="ninja.png" alt="ninja">
+	</div>
+	<p>Click the button below to restore all the images.</p>
+	<button id="restore">Restore</button>
+</body>
+</html>

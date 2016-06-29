@@ -1,0 +1,27 @@
+/*Incline items are laid out much like words, one after 
+the other horizontally across the available space. 
+Note: they have no height property*/
+p{
+	background-color: grey;
+	display: inline;
+}
+/* Block items stack vertically, like paragraphs or items
+in a bullet list*/
+
+a{
+	background-color: yellow;
+	display: block;
+}
+ul{
+	background-color: blue;
+	display:inline;
+}
+ul li{
+	background-color: green;
+	display: inline;
+}
+/*Block elements: <body> <div> <form> <h1><h6> <p> <table>
+<ul> <ol> <li>*/
+/*Incline elements: <a> <img> <span> <input> <label> <select>
+<textarea>*/
+

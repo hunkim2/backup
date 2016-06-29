@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Forms</title>
+		<!--A meta tag provides data about the HTML document. They do not actually display on the website, but rather have specific page descriptions, keywords, author of the document, etc-->
+		<meta name="description" content="A small way to understand Forms">
+
+	</head>
+	<body>
+		<!--The label tag is used by first creating an 
+		"name attribute" and a "type attribute" the name attribuate being what the name of the field that is to be filled, and the  type attribute is the type of input: in the examples below, these are "text" inputs.-->
+		<p>
+		<label>
+			First name:<input type="text" name="first_name">
+		</label>
+		<label>
+			Last name:<input type="text" name="last_name">
+		</label>
+		<label>
+			Email:<input type="text" name="email">
+		</label>
+		</p>
+
+		<!--Input type here is password-->
+		<p>
+		<label>
+			Password: <input type="password" name="password">
+		</label>
+		</p>
+
+		<!--Radio type is used here. This is good when a user can only choose one of a few options. Or also coined as a "gender" selector-->
+		<p>
+		<label>
+			<input type="radio" name="gender" value="male"> Male
+		</label>
+		<label>
+			<input type="radio" name="gender" value="female"> Female
+		</label>
+		</p>
+
+
+		<!--Another option is a dropdown menu, which uses <select> and <option> tags rather than <label> tags. Same concept of setting values-->
+		<p>
+		<select name="gender">
+			<option value="noselect">   </option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+		</select>
+		</p>
+
+		<!--When user can choose multiple things from a variety of options, such as choosing their favorite of 3 colors from 5: input type here is known as "checkbox"-->
+		<p>
+		<label>
+			<input type="checkbox" name="color" value="blue"> Blue
+			<input type="checkbox" name="color" value="green"> Green
+			<input type="checkbox" name="color" value="red"> Red
+			<input type="checkbox" name="color" value="pink"> Pink
+			<input type="checkbox" name="color" value="black"> Black
+			Black
+		</label>
+		</p>
+
+		<!--When users might want to enter longer text such as in a forum for comments. This is also known as the <textarea> tag.-->
+		<p>
+		<textarea name="description"></textarea>
+		</p>
+
+		<!--This type is a submit input type-->
+		<p>
+		<input type="submit" value="Submit">
+		</p>
+	</body>
+</html>
+
+		

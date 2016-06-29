@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hover Yo</title>
+	<meta name="Description" content="jerseys">
+	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.alert').click(function(){
+				alert('you tickled me!');
+			});
+
+			$('.new_btn').click(function(){
+				$('#buttons').append("<button class='alert'>I am a dynamically generated button mothertruckers!</button>");
+			});
+			//a on handler will consistently listen for clicks for anything that has the class "alert"
+			$(document).on('click', '.alert', function(){
+				alert('you click me on me');
+			})
+		});
+	</script>
+</head>
+<body>
+	<h3>Static Content</h3>
+	<div>
+		<button class="alert">Click me for a message!</button>
+		<button class="alert">Click me for a message!</button>
+		<button class="alert">Click me for a message!</button>
+		<button class="new_btn">Click me to add a new button!</button>
+	</div>
+	<h3>Dynamically rendered content!</h3>
+	<div id='buttons'>
+	</div>
+</body>
+</html>

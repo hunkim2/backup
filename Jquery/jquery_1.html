@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Assignment</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//this function for .click
+			$('#topic1').click(function(){
+				alert('This is the click function!');
+			});
+			//this function is for .focus
+			$("input").focus(function(){
+				$("span").css("display", "inline").fadeOut(2000);
+			});
+			//this is for .addClass function
+			$('#topic3').click(function(){
+				$("#blue").addClass("selected");
+			})
+			//this is for the .val function
+			$('#topic4').click(function(){
+				$("#input:text").val("Howard Kim")
+			})
+			
+			//this is for the .text function
+			$('#topic5').click(function(){
+				$('.txts').text('This is how we do it~!')
+			})
+
+			//this is for the .attr function
+			$('#topic6').click(function(){
+				$("#fox").attr({ "width" : "50px" , "height" : "50px" })
+			})
+			$('#topic7').click(function(){
+				$('#links').html("<a href='www.yahoo.com'>You can go to Yahoo instead if you press this button</a>")
+			})
+
+			//this is for the .data function
+			$('#topic8').click(function(){
+				$('#databata').data('greetings', 'Hello World');
+			});
+			$('#topic88').click(function(){
+				alert($('#databata').data('greetings'));
+			})
+
+			//this is for the .before function
+			$('#topic9').click(function(){
+				$('.mymy').before('<p>HOLY</p>');
+			})
+
+			//this is for the .after function
+			$('#topic10').click(function(){
+				$('.youyou').after('<p>MOLY</p>')
+			})
+
+			//this is for the .append function
+			$('#topic11').click(function(){
+				$('.yoo').append('<b> gg no re</b>')
+			})
+
+			//this is for the hide and show functions
+			$('#topic12').click(function(){
+				$('#magic').hide();
+			})
+			$('#topic1212').click(function(){
+				$('#magic').show();
+			})
+
+			//this is for the toggle function
+			$('#topic13').click(function(){
+				$('#tog').toggle();
+			})
+
+			//this is for the fadeOut and fadeIn functions
+			$('#topic14').click(function(){
+				$('#faded').fadeOut();
+			})
+			$('#topic1414').click(function(){
+				$('#faded').fadeIn();
+			})
+
+			//this is for the slideUp and slideDown functions
+			$('#topic15').click(function(){
+				$('#slid').slideUp();
+			})
+			$('#topic1515').click(function(){
+				$('#slid').slideDown();
+			})
+		});
+	</script>
+	<style>
+	span{
+		display: none;
+	}
+	#blue{
+		color: blue;
+	}
+	.selected{
+		background-color: red;
+	}
+
+	</style>
+</head>
+<body>
+	<h1>Click Function</h1>
+	<!--This p tag is for .click-->
+		<p>This shows the .click function</p>
+			<button id="topic1">Click me!</button><hr>
+	<!--This p tag is for .focus-->
+		<p>
+	<h1>Focus Function</h1>
+		FOCUS ON YOUR WORK!
+		<input type="text"><span>I wub you Michelle!</span>
+	</p><hr>
+
+	<!--This demonstrates the addClass tag-->
+	<button id="topic3">Change the background to red</button>
+		<p id="blue">This paragraph will blow your mind</p><hr>
+
+	<!--This demonstrates the val tag-->
+	<h1>Val Function</h1>
+		<p>Name: <input id="input" type="text" name="user"></p>
+		<button id="topic4">Click me and I'll do the Work for you!</button><hr>
+
+	<!--This demonstrates the text tag-->
+	<h1>Text Function</h1>
+		<button id="topic5">Set text contents for all p elements</button>
+		<p class="txts">Paragraph yung thug!</p>
+		<p class="txts">This paragraph too yung thug!</p><hr>
+
+	<!--This demonstrates the attribute tag-->
+	<h1>Attribute Function</h1>
+		<button id="topic6">Change the width of this picture</button>
+		<img id="fox" src="https://66.media.tumblr.com/71b50e81a10ffb30b68813c6c7a0cb88/tumblr_o42ed4E4D31udr3xoo1_500.jpg"/><hr>
+
+	<!--This demonstrates the html tag-->
+	<!--Note the difference between .text and .html is that each treat their respective text in their respective terms. .html treates it as html and .text treats it as text-->
+	<h1>HTML Function</h1>
+		<button id="topic7">Change the content of this paragraph</button>
+		<a id="links" href="www.google.com">Links on Me</a><hr>
+
+	<!--This demonstrates the data tag-->
+	<h1>Data Function</h1>
+		Note: by not pressing the first button on the left, the alert will claim undefined, for there is no data in that element.
+		<button id="topic8">Add Data to a div element</button>
+		<button id="topic88">Retrieve the data that was just attached</button>
+		<div id="databata">Mexico!</div><hr>
+
+	<!--This demonstrates the before tag-->
+	<h1>Before Function</h1>
+		<button id="topic9">Insert content before each p element</button>
+		<p class="mymy">Shit</p>
+		<p class="mymy">Shit</p><hr>
+
+	<!--This demonstrates the after tag-->
+	<h1>After Function</h1>
+		<button id="topic10">Insert content after each p element</button>
+		<p class="youyou">holy</p>
+		<p class="youyou">holy</p><hr>
+
+	<!--This demonstrates the append tag-->
+	<h1>Append Function</h1>
+		<button id="topic11">Append Text Here</button>
+		<p class="yoo">HA</p>
+		<p class="yoo">HA HA HAHAHAHA</p><hr>
+
+	<!--This demonstrates the show and hide tags-->
+	<h1>Show and Hide Functions</h1>
+		<button id="topic12">Hide</button>
+		<button id="topic1212">Show</button>
+		<p id="magic">Magician</p><hr>
+
+	<!--This demonstrates the toggle tag-->
+	<h1>Toggle Function</h1>
+		<button id="topic13">Toggle Between hide() and show()</button>
+		<p id="tog">This is paragraph</p><hr>
+
+	<!--This demonstrates the fadeIn and fadeOut-->
+	<h1>FadeIn and FadeOut Functions</h1>
+		<button id="topic14">Fade Out</button>
+		<button id="topic1414">Fade In</button>
+		<p id="faded">I am so faded</p><hr>
+
+	<!--This demonstrates slideUp and slideDown-->
+	<h1>SlideUp and SlideDown Functions</h1>
+		<p id="slid">This is this thing</p>
+		<button id="topic15">Slide Up</button>
+		<button id="topic1515">Slide Down</button>
+		
+</body>
+</html>

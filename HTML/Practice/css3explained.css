@@ -1,0 +1,14 @@
+/*CSS3 is a series of modules that are designed to be
+implemented separately and independently from each other
+. There are a two categories that website's visual elements
+can be split into: critical and noncritical.*/
+/*Critical include: branding, usability, accessibility
+and layout*/
+/*Non-critical include: interaction, visual rewards,
+feedback, and movement.*/
+.awesome{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: gray;
+}

@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		// $('button').click(function(){
+		// 	//getter function gets the value of something!
+		// 	var myText = $('#myParagraph').text();
+		// 	alert(myText);
+		$('button').click(function(){
+			$('#myParagraph').text('see how I .text() works as a setter!');
+		});
+	
+	})
+	</script>
+</head>
+<body>
+	<p id='myParagraph'>This is my paragraph!</p>
+	<button>Click me to change the paragraph</button>
+</body>
+</html>

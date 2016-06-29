@@ -1,0 +1,41 @@
+#container{
+	background-color: yellow;
+	/*display: inline-block;*/
+	width: 600px;
+
+	/*This makes it so that the first number is the top and bottom
+	and auto stands for the left and right to be calculated by
+	the browser*/
+	margin: 0 auto;
+}
+#Box-1, #Box-2, #Box-3{
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	display: inline-block;
+}
+/*An Absolute positioned elements act as though their display
+property were set to none*/
+#Box-1{
+	background-color: green;
+	/*position: absolute;
+	top: 40px;*/
+}
+
+/*A Relative postioned element are positioned based on set proximities.
+
+
+An imporant aspect of relative positioning is that elements around
+that relatively positioned elemtn act as though that shift has
+not occured*/
+#Box-2{
+	background-color: pink;
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+#Box-3{
+	background-color: blue;
+	position: fixed;
+	
+}

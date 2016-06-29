@@ -1,0 +1,37 @@
+#container{
+	background-color:grey;
+	width:960px;
+	/*To get around the collapsing container, add the following
+	elements*/
+	/*overflow: hidden;
+	height: auto;*/
+}
+#box-1, #box-2, #box-3{
+	/*these parameters can customize block elements*/
+	background-color: green;
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+
+	/*margins create space between "blocks" or outside the individual
+	between blocks*/
+	margin: 0 20px;
+	/*margin-left only pushes block element on the left side same
+	with margin-right and etc.
+
+	This can also be written as:
+	margin: 0 20px;
+	which pushes the block element only on the left side
+
+	/*padding creates space between the content and the outer
+	borders of a block element*/
+	padding:20px;
+}
+#box-1, #box-2, #box-3{
+	float:right;
+}
+/*If you float all the boxes, the container collapses and
+no longer takes up any space*/
+.clear{
+	clear:both;
+}s

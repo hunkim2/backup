@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hover Yo</title>
+	<meta name="Description" content="jerseys">
+	<style>
+	* {
+		margin: 0 auto;
+		padding: 0;
+	}
+	.container {
+		margin: 20px auto;
+		width: 800px;
+	}
+	.img {
+		width: auto;
+		height:auto;
+	}
+	</style>
+	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#container').addClass('container');
+			$('img').addClass('img');
+			$('img').hover(function(){
+				var temp = $(this).attr('src');
+				$(this).attr('src', $(this).attr('data-alt-src'));
+				$(this).attr('data-alt-src', temp);
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="container">
+		<img src="shoe1.jpg" data-alt-src="shoe11.jpg"/>
+		<img src="shoe2.jpg" data-alt-src="shoe22.jpg"/>
+		<img src="shoe3.jpg" data-alt-src="shoe33.jpg"/>
+		<img src="shoe4.jpg" data-alt-src="shoe44.jpg"/>
+	</div>
+</body>
+</html>

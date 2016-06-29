@@ -1,0 +1,26 @@
+/* Removes underlines from links*/
+a{
+	text-decoration: none;
+}
+
+/*Indents the first line of paragraphs*/
+p{
+	text-indent: 50px;
+}
+
+/*There are different types of fonts that are available. Programmers
+must place more than one font in case users do not use a specific font.
+And Example of this is*/
+p{
+	font-family: 'helvetic neue', arial, verdana, sans-serif;
+}
+/*Note that fonts with more than one word in their name need
+a surrounding of quotes*/
+p{
+	font-style:italic;
+}
+
+/*Bolding is a font weight property, in other words*/
+p{
+	font-weight: normal;
+}

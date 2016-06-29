@@ -1,0 +1,32 @@
+
+/* This is known as an element selector */
+p
+{
+	color:blue;
+}
+
+/* This is known as a class selector */
+.info
+{
+	font-size: 12px;
+}
+
+/* These are known as an id selector */
+#side_content
+{
+	background-color: green;
+	border: 25px solid black;
+}
+#main_content
+{
+	background-color: pink;
+	color: red;
+}
+
+/* You can also group different selectors together to make the code
+more concise */
+h1, h2, p
+{
+		text-align: center;
+		color: red;
+}

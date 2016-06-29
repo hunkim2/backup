@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>jQuery Demo!</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			alert('you are now working with jQuery!')
+
+			$('a').click(function(){
+				alert('you are now leaving the page!');
+			})
+			//because this is first it takes priority and will hide any things
+			//with a p tag
+			$('p').hide();
+			// //effects methods  they toggle the visiblity property of items
+			//this can also be used in tandem, in a sense they are used for an l
+			//element that contains both the ability to hide or be shown
+
+			$('#hide').click(function(){
+				$('p').hide();
+			})
+			$('#show').click(function(){
+				$('p').show();
+			})
+
+			// //manipulation methods add/change either text or html to your document
+			//.hover "listens" for the user to go over the text function that was stated and using .text it can change the text of the function.
+			$('h3').hover(function(){
+				$('h2').text('go see the Space Needle!');
+			})
+			// }, function(){alert('now invoking the second function!')});
+
+			$('.append').click(function(){
+				$('.result').append('<h4>.append adds HTML!</h4>');
+			})
+
+			//css method
+			$('button').click(function(){
+				//.css allows you to called on a descriptor in css and the second value is what the descriptor will change the html format to
+				$('button').css('background-color', 'yellow');
+			})
+		})
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+	<div class='result'></div>
+	<p>This is a paragraph</p>
+
+	<p>This is also a paragraph!</p>
+
+	<button id='hide'>This will hide all paragraphs</button>
+	<button id='show'>Click to show all paragraphs</button>
+	<a id="mylink" href="http://www.google.com">Go to Google!</a>
+	<h3>Mountain View, California</h3>
+	<h2> Seattle, Washington</h2>
+	<button class='append'>Click to see .append work!</button>
+	<div class='result'></div>
+</body>
+</html>

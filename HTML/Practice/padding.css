@@ -1,0 +1,57 @@
+div{
+	padding-top: 25px;
+	padding-right: 50px;
+	padding-bottom: 75px;
+	padding-left: 100px;
+}
+
+/*This is similar to*/
+div{
+	padding: 25px 50px 75px 100px;
+}
+
+div{
+	padding-top: 25px;
+	padding-right: 50px;
+	padding-bottom: 75px;
+	padding-left: 50px;
+}
+
+/*This is similar to*/
+div{
+	padding: 25px 50px 75px;
+}
+
+div{
+	padding-top: 25px;
+	padding-right: 50px;
+	padding-bottom: 25px;
+	padding-left: 50px;
+}
+/*This is similar to*/
+div{
+	padding: 25px 50px 75px;
+}
+
+div{
+	padding-top: 25px;
+	padding-right: 50px;
+	padding-bottom: 25px;
+	padding-left: 50px;
+}
+
+/*This is similar to*/
+div{
+	padding: 25px 50px;
+}
+
+div{
+	padding-top: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+}
+/*This is similar to*/
+div{
+	padding: 25px;
+}
